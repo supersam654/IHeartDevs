@@ -1,0 +1,26 @@
+name: IHeartDevs
+version: 0.4.0
+author: Supersam654
+website: http://forums.bukkit.org/threads/MyPlugin.31337/
+
+main: com.sammarder.iheartdevs.IHeartDevs
+database: false
+
+permissions:
+  ihd.*:
+    description: Gives access to all IHeartDevs commands.
+    children:
+      ihd.list: true
+      ihd.view: true
+      ihd.publish: true
+  ihd.view:
+    description: Gives access to /ihd list and /ihd view
+    default: op
+  ihd.publish:
+    description: Gives acces to /ihd publish.
+    default: op
+
+commands:
+  ihd:
+    description: Root command for all IHeartDevs commands.
+    usage: /<command> help [list | view | publish]
