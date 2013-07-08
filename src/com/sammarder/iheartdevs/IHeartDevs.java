@@ -52,7 +52,7 @@ public final class IHeartDevs extends JavaPlugin {
 		this.getCommand("ihd").setExecutor(
 				new CommandManager(errorFolderManager, new GistLogPublisher(), new SimpleDateFormat()));
 
-		tempTesting();
+		// tempTesting();
 	}
 
 	@Override
